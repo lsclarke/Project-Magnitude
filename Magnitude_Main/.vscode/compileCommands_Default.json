@@ -1,0 +1,42 @@
+[
+	{
+		"file": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\Source\\Magnitude_Main\\Magnitude_Main.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default\\Magnitude_Main.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\Source\\Magnitude_Main\\Magnitude_Main.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default\\Magnitude_Main.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\Source\\Magnitude_Main\\Magnitude_Main.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default\\Magnitude_Main.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\Source\\Magnitude_Main\\Magnitude_MainGameModeBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default\\Magnitude_Main.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\Source\\Magnitude_Main\\Magnitude_MainGameModeBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default\\Magnitude_Main.261.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	}
+]

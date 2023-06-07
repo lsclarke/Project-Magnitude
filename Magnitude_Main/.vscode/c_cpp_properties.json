@@ -1,0 +1,22 @@
+{
+	"configurations": [
+		{
+			"name": "Magnitude_MainEditor Editor Win64 Development (Magnitude_Main)",
+			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "msvc-x64",
+			"configurationProvider": "epic.ue",
+			"compileCommands": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Magnitude_Main.json"
+		},
+		{
+			"name": "Win32",
+			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "msvc-x64",
+			"configurationProvider": "epic.ue",
+			"compileCommands": "C:\\Users\\lenar\\Documents\\GitHub\\Project-Magnitude\\Magnitude_Main\\.vscode\\compileCommands_Default.json"
+		}
+	]
+}
