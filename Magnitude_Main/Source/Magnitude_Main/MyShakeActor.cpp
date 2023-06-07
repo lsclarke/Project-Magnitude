@@ -15,7 +15,10 @@ AMyShakeActor::AMyShakeActor()
 void AMyShakeActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	SetActorLocation(MyPosition);
+	//PosX = MyPosition.X;
+	//PosY = MyPosition.Y;
+	//PosZ = MyPosition.Z;
 
 }
 
@@ -24,46 +27,49 @@ void AMyShakeActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	SetActorLocation(getCurrentLocation());
+	GetMyPosition();
 
+
+///X Magnitude
+FVector NewPositionX = GetActorLocation();
+
+  if (NewPositionX.X > PosX) {
+    IsMovingRight = false;
+  } else if (NewPositionX.X < -PosX) {
+    IsMovingRight = true;
+  }
+  float factorX = (IsMovingRight ? 20.0f : -20.0f);
+  NewPositionX.X += factorX * DeltaTime * Strength * Velocity;
+  SetActorLocation(NewPositionX);
+
+//Y Magnitude
+FVector NewPositionY = GetActorLocation();
+
+  if (NewPositionY.Y > PosY) {
+    IsMovingForward = false;
+  } else if (NewPositionY.Y < -PosY) {
+    IsMovingForward = true;
+  }
+  float factorY = (IsMovingForward ? 20.0f : -20.0f);
+  NewPositionY.Y += factorY * DeltaTime * Strength * Velocity;
+  SetActorLocation(NewPositionY);
+
+//Z Magnitude
+FVector NewPositionZ = GetActorLocation();
+
+  if (NewPositionZ.Z > PosZ) {
+    IsMovingUp = false;
+  } else if (NewPositionZ.Z < -PosZ) {
+    IsMovingUp = true;
+  }
+  float factorZ = (IsMovingUp ? 20.0f : -20.0f);
+  NewPositionZ.Z += factorZ * DeltaTime * Strength * Velocity;
+  SetActorLocation(NewPositionZ);
 }
 
-void AMyShakeActor::ShakeThisActor(float deltaTime){
-
-	FVector NewLocation = GetActorLocation();
-
-////////X coordinate
-if(NewLocation.X > (getPosition.X + MotionX)){
-		isMovingRight = false;
-	}else if(NewLocation.X < (getPosition.X + -MotionX)){
-		isMovingRight = true;
-	}
-
-	float factorX = (isMovingRight ? 20.f : -20.f);
-	NewLocation.X = factorX * deltaTime * strength;
-
-////////Y coordinate
-if(NewLocation.Y > (getPosition.X + MotionY)){
-		isMovingForward = false;
-	}else if(NewLocation.Y < (getPosition.Y + -MotionY)){
-		isMovingForward = true;
-	}
-
-	float factorY = (isMovingForward ? 20.f : -20.f);
-	NewLocation.Y = factorY * deltaTime * strength;
-
-////////Z coordinate
-	if(NewLocation.Z > (getPosition.Z + MotionZ)){
-		isMovingUp = false;
-	}else if(NewLocation.Z < (getPosition.Z + -MotionZ)){
-		isMovingUp = true;
-	}
-
-	float factorZ = (isMovingUp ? 20.f : -20.f);
-	NewLocation.Z = factorZ * deltaTime * strength;
+FVector AMyShakeActor::GetMyPosition()
+{
+	MyPosition = GetActorLocation();
+	return MyPosition;
 }
 
-FVector AMyShakeActor::getCurrentLocation(){
-	getPosition = GetActorLocation();
-	return getPosition;
-}

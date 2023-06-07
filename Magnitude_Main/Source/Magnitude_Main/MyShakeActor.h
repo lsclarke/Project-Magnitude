@@ -23,36 +23,30 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	//Functions
-	UFUNCTION(BlueprintCallable)
-	void ShakeThisActor(float deltaTime);
-	UFUNCTION(BlueprintCallable)
-	FVector getCurrentLocation();
-
-	//Variable for the magnitude strength
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float strength;
-
-	//Variables for the position change
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float MotionX;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float MotionY; 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float MotionZ;
-
-	//Vector-Location Variable
 	UPROPERTY(EditAnywhere)
-	FVector getPosition;
+	FVector MyPosition;
+
+	UPROPERTY(EditAnywhere)
+	float PosX = 0.0f;
+	UPROPERTY(EditAnywhere)
+	float PosY = 0.0f;
+	UPROPERTY(EditAnywhere)
+	float PosZ = 0.0f;
+
+	UPROPERTY(EditAnywhere)
+	float Strength;
+	UPROPERTY(EditAnywhere)
+	float Velocity;
+
+	bool bImGoingUp = true;
+	bool IsMovingUp = true;
+	bool IsMovingRight = true;
+	bool IsMovingForward = true;
 
 
-	//Bool Variables
-	UPROPERTY(EditAnywhere)
-	bool isMovingUp;
-	UPROPERTY(EditAnywhere)
-	bool isMovingRight;
-	UPROPERTY(EditAnywhere)
-	bool isMovingForward;
+	void StartEarthQuake(float DeltaTime);
+
+	FVector GetMyPosition();
 
 
 
